@@ -16,6 +16,7 @@ const md = MarkdownIt({
         return "";
     },
 });
+
 const srcPath = path.join(__dirname, "src");
 const buildPath = path.join(__dirname, "build");
 const lessonsPath = path.join(srcPath, "lessons");
@@ -112,6 +113,15 @@ getDirectories(lessonsPath).forEach((l) => {
     });
 
     if (chapters.length > 0) {
+        // Sort chapters by order
+        const sortedChapters = lesson.chapters.sort(
+            (a, b) => a.order - b.order,
+        );
+        lesson.chapters = sortedChapters;
+
+        // Set the lesson URL to the first chapter's URL
+        lesson.url = sortedChapters[0].url;
+
         lessons.push(lesson);
     } else {
         console.log(
@@ -152,7 +162,7 @@ lessons.forEach((lesson) => {
     });
 });
 
-ejs.renderFile(indexPath, {}, (err, str) => {
+ejs.renderFile(indexPath, { lessons }, (err, str) => {
     if (err) {
         console.error("⨯ Error rendering index.ejs:", err);
         return;

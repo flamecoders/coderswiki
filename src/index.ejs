@@ -105,6 +105,27 @@
         main p {
             color: var(--para);
         }
+
+        .lessons {
+            display: grid;
+            place-items: center;
+        }
+
+        .lessons div {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .lesson {
+            padding: 24px;
+            background-color: var(--secondary);
+            color: inherit;
+            text-decoration: none;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
@@ -121,7 +142,17 @@
     </nav>
     <main>
         <h1>Welcome to Coderswiki</h1>
-        <p>This is a simple landing page.</p>
+        <p>This website is under development!</p>
+        <h2>Pick a lesson to get started &#8594;</h2>
+        <div class="lessons">
+            <div>
+                <% lessons.forEach(function(lesson) { %>
+                    <a class="lesson" href="<%= lesson.url %>">
+                        <%= lesson.name %>
+                    </a>
+                    <% }); %>
+            </div>
+        </div>
     </main>
 </body>
 
