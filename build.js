@@ -20,6 +20,8 @@ const srcPath = path.join(__dirname, "src");
 const buildPath = path.join(__dirname, "build");
 const lessonsPath = path.join(srcPath, "lessons");
 const layoutPath = path.join(srcPath, "layout.ejs");
+const indexPath = path.join(srcPath, "index.ejs");
+const indexHtmlPath = path.join(buildPath, "index.html");
 const lessons = [];
 
 // Utility functions
@@ -148,6 +150,15 @@ lessons.forEach((lesson) => {
             },
         );
     });
+});
+
+ejs.renderFile(indexPath, {}, (err, str) => {
+    if (err) {
+        console.error("⨯ Error rendering index.ejs:", err);
+        return;
+    }
+
+    fs.writeFileSync(indexHtmlPath, str);
 });
 
 console.log("✓ Lessons processed and HTML files generated successfully!");
