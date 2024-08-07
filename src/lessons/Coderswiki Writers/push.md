@@ -4,8 +4,8 @@ order: 4
 ---
 
 > Note ! pushing code to github is a critical task, one mistake can make you cry .
->
-> hum `git push` use karte hai humne jo apne device mei code mei changes kiye usko github mei le jane ke liye
+
+hum `git push` use karte hai humne jo apne device mei code mei changes kiye usko github mei le jane ke liye
 
 Lakin us se pahle 3 aur steps hota hai, you need to know this.
 
