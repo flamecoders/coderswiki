@@ -14,6 +14,7 @@ Git push use karne ke liye hume pahle terminal ko github ke sath connect karna p
 
 ```bash
 git checkout -b main
+git config --global credential.helper store
 git config --global user.name "Your username from github account"
 git config --global user.email "your.email@example.com"
 git remote add origin your_repo_url
