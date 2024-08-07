@@ -18,7 +18,7 @@ Now where to code ?
 
 To start coding, code ko tumhe github se tumhare computer mei lana padega. use liye hum use karte
 
-## `git clone`
+### `git clone`
 
 tumne abhi jo fork banaya uske upar ke search bar ka url copy karo. it should look like `https://github.com/username/reponame`
 abh tumhare computer mei terminal open karo and type: 
