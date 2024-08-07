@@ -13,6 +13,7 @@ Lakin us se pahle 3 aur steps hota hai, you need to know this.
 Git push use karne ke liye hume pahle terminal ko github ke sath connect karna padega. for that
 
 ```bash
+git init
 git checkout -b main
 git config --global credential.helper store
 git config --global user.name "Your username from github account"
