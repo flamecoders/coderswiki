@@ -1,3 +1,8 @@
+---
+title: C++ syntax
+order: 1
+---
+
 # C++ Syntax
 
 ## C++ Syntax
