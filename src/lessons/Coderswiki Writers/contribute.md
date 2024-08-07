@@ -14,3 +14,14 @@ github ke projects ko hum `repo` bolte hai. maine jo [coderswiki](https://github
 ### `git fork`
 yeh ek tarha se kisi aur ke repo mei changes karne ke liye apne account mei ek clone banana hota hai. mere repo mei ja kar upar ek `fork` button dikhega uspe click kar ke same name se apna khud ka ek repo bana lo. 
 
+Now where to code ?
+
+To start coding, code ko tumhe github se tumhare computer mei lana padega. use liye hum use karte
+
+## `git clone`
+
+tumne abhi jo fork banaya uske upar ke search bar ka url copy karo. it should look like `https://github.com/username/reponame`
+abh tumhare computer mei terminal open karo and type: 
+`git clone https://github.com/username/reponame`
+is se tumhare computer mei sara code ka ek copy chala jayega ! Now you can make any changes
+_(remember to install git first)_
