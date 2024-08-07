@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Coderswiki</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        :root {
+            --background: #12181b;
+            --color: #f8f8f8;
+            --para: #d1d5db;
+            --color-s: #b2becd;
+            --color-s-s: #6c7983;
+            --primary: #12181B;
+            --secondary: #2A2E35;
+            --border: #2a2e35;
+            --accent: #f97316;
+            --accent-s: #eab308;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--background);
+            color: var(--color);
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            padding: 16px 24px;
+        }
+
+        .business-logo {
+            height: 3rem;
+            width: 3rem;
+        }
+
+        .flex1 {
+            flex: 1;
+        }
+
+        .menu {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: 700;
+            font-size: 18px;
+            transition: color .2s ease-in-out;
+        }
+
+        .menu a:hover {
+            color: var(--accent);
+        }
+
+        .button-79 {
+            transition: all .2s ease-in-out !important;
+            background-color: var(--color);
+            border-radius: .5rem;
+            box-sizing: border-box;
+            color: #111827 !important;
+            font-size: .875rem;
+            font-weight: 600;
+            line-height: 1.25rem;
+            padding: .75rem 1rem;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-79:hover {
+            background-color: var(--accent);
+            color: var(--color) !important;
+            box-shadow: 0px 0px 114px 0px rgba(249, 117, 22, 0.54);
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        main h1 {
+            font-weight: 800;
+            text-transform: uppercase;
+            background-image: linear-gradient(to top, var(--tw-gradient-stops));
+            --tw-gradient-from: var(--accent);
+            --tw-gradient-to: rgb(249 115 22 / 0);
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+            --tw-gradient-to: var(--accent-s);
+            background-clip: text;
+            color: #0000;
+            -webkit-background-clip: text;
+        }
+
+        main p {
+            color: var(--para);
+        }
+
+        .lessons {
+            display: grid;
+            place-items: center;
+        }
+
+        .lessons div {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .lesson {
+            padding: 24px;
+            background-color: var(--secondary);
+            color: inherit;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/">
+            <img src="https://svgshare.com/i/191W.svg" alt="logo" class="business-logo">
+        </a>
+        <span class="flex1"></span>
+        <div class="menu">
+            <a href="/">Courses</a>
+            <a href="/doubt" class="button-79">Ask Doubt</a>
+        </div>
+    </nav>
+    <main>
+        <h1>Welcome to Coderswiki</h1>
+        <p>This website is under development, doubt section is not functioning yet, ask in group !</p>
+        <h2>Pick a lesson to get started &#8594;</h2>
+        <div class="lessons">
+            <div>
+                <% lessons.forEach(function(lesson) { %>
+                    <a class="lesson" href="<%= lesson.url %>">
+                        <%= lesson.name %>
+                    </a>
+                    <% }); %>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
