@@ -20,8 +20,13 @@ To start coding, code ko tumhe github se tumhare computer mei lana padega. use l
 
 ### `git clone`
 
-tumne abhi jo fork banaya uske upar ke search bar ka url copy karo. it should look like `https://github.com/username/reponame`
+tumne abhi jo fork banaya uske upar ke search bar ka url copy karo. it should look like 
+
+`https://github.com/username/reponame`
+
 abh tumhare computer mei terminal open karo and type: 
+
 `git clone https://github.com/username/reponame`
+
 is se tumhare computer mei sara code ka ek copy chala jayega ! Now you can make any changes
 _(remember to install git first)_
