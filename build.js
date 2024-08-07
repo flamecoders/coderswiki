@@ -15,6 +15,7 @@ const md = MarkdownIt({
 
         return "";
     },
+    linkify: true,
 });
 
 const srcPath = path.join(__dirname, "src");
