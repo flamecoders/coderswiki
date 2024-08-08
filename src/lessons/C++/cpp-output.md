@@ -4,7 +4,7 @@ order: 3
 author: Malay Patra
 ---
 
-# C++ Output (Print Text)
+# C++ Output
 
 ## The `cout` Object
 
