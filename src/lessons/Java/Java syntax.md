@@ -10,8 +10,9 @@ author: Devdatta Routh
  So in the previous chapter we learnt how to create a file and execute  a simple output operation. Now, let's dive into the working of the code lines and the **rules** to be followed while writing them!
  Here's your code lines for `Main.Java`  file to print "Hello World" to the screen:
 
-Main.java
 ```
+Main.java
+
 public class Main {
   public static void main(String[] args) {
     System.out.println("Hello World");
