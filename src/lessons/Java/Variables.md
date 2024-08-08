@@ -22,26 +22,26 @@ Where type is one of Java types (such as int or String), and variableName is the
 To create a variable that should store text, look at the following example:
 Example
 Create a variable called name of type String and assign it the value "John":
-```bash
+```java
 String name = "John";
 System.out.println(name);
 
 ```
 To create a variable that should store a number, look at the following example:
-```bash
+```java
 int myNum = 15;
 System.out.println(myNum);
 ```
 You can also declare a variable without assigning the value, and assign the value later:
 Example
-```bash
+```java
 int myNum;
 myNum = 15;
 System.out.println(myNum);
 ```
 Note that if you assign a new value to an existing variable, it will overwrite the previous value:
 Example Change the value of myNum from 15 to 20:
-```bash
+```java
 int myNum = 15;
 myNum = 20;  // myNum is now 20
 System.out.println(myNum);
@@ -49,7 +49,7 @@ System.out.println(myNum);
 ## Final Variables
 If you dont want others (or yourself) to overwrite existing values, use the final keyword (this will declare the variable as "final" or "constant", which means unchangeable and read-only):
 Example
-```bash
+```java
 final int myNum = 15;
 myNum = 20;  // will generate an error: cannot assign a value to a final variable
 ```
@@ -57,7 +57,7 @@ myNum = 20;  // will generate an error: cannot assign a value to a final variabl
 ## Other Types
 A demonstration of how to declare variables of other types:
 Example
-```bash
+```java
 int myNum = 5;
 float myFloatNum = 5.99f;
 char myLetter = 'D';
