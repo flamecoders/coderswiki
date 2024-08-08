@@ -11,7 +11,8 @@ author: Devdatta Routh
  Here's your code lines for `Main.Java`  file to print "Hello World" to the screen:
 
 Main.java
-```
+```java
+
 public class Main {
   public static void main(String[] args) {
     System.out.println("Hello World");
@@ -41,7 +42,7 @@ public class Main {
 ## 3. System.out.println()
 
  Inside the `main()` method, we can use the `println()` method to print a line of text to the screen:
-```
+```java
 public static void main(String[] args) {
   System.out.println("Hello World");
 }
