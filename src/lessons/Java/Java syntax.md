@@ -17,7 +17,7 @@ public class Main {
   }
 }
 ```
-## 1. **Code Explained**
+## 1. Code Explained
 
 #### Every line of code that runs in Java must be inside a `class`. In our example, we named the class **Main**. A class should always start with an uppercase first letter.
 
@@ -27,7 +27,7 @@ public class Main {
 
 >`Hello World`
 
-## 2. **The main() Method**
+## 2. The main() Method
 
 #### The `main()` method is **COMPULSORY** in every Java program.
 
@@ -37,7 +37,7 @@ public class Main {
 
 #### For now, simply keep in mind that every Java program has a `class` name which must match the filename, and that every program must contain the `main()` mathod. Finally, arriving to last section of this chapter-
 
-## 3. **System.out.println()**
+## 3. System.out.println()
 
 #### Inside the `main()` method, we can use the `println()` method to print a line of text to the screen:
 ```
