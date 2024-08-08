@@ -1,9 +1,9 @@
 ---
-title : Java
+title : Java Getting Started
 order : 0
 ---
-# Java: Let's get started
-## # Introduction to Java:
+# Java Getting Started
+## 1.Introduction to Java:
 Java is an object-oriented programing language.
 It is owned by Oracle.
 
@@ -22,7 +22,7 @@ Games
 Database connection
 
 And much, much more!
-## #Java install:
+## 2.Java install:
 Some PCs might have Java already installed.
 
 To check if you have Java installed on a Windows PC, search in the start bar for Java or type the following in Command Prompt (cmd.exe):
@@ -38,7 +38,7 @@ Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
 If you do not have Java installed on your computer, you can download it for free at oracle.com.
 
 Note: In this tutorial, we will write Java code in a text editor. However, it is possible to write Java in an Integrated Development Environment, such as IntelliJ IDEA, Netbeans or Eclipse, which are particularly useful when managing larger collections of Java files.
-## #Set up for Windows:
+## 3.Set up for Windows:
 To install Java on Windows:
 
 Go to "System Properties" (Can be found on Control Panel > System and Security > System > Advanced System Settings)
@@ -52,7 +52,7 @@ Click on the "New" button and add the path where Java is installed, followed by 
 Then, click "OK", and save the settings
 
 At last, open Command Prompt (cmd.exe) and type java -version to see if Java is running on your machine
-## #Structure of a basic Java program:
+## 4.Structure of a basic Java program:
 In Java, every application begins with a class name, and that class must match the filename.
 
 Let's create our first Java file, called Main.java, which can be done in any text editor (like Notepad).
@@ -75,5 +75,3 @@ The output will be:
 Hello World
 ```
 Congratulations on your first Java program!!
-
-Had to work my ass of to copy and paste all that :)
