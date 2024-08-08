@@ -1,3 +1,9 @@
+---
+title: C++ Output
+order: 3
+author: Malay Patra
+---
+
 # C++ Output (Print Text)
 
 ## The `cout` Object
