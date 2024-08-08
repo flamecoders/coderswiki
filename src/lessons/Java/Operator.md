@@ -1,20 +1,21 @@
 ---
 title: Operators
 order: 3
+author: Karan Prasad
 ---
 
 #   Java Operators
 
 Operators are used to perform operations on variables and values.
 
-In the example below, we use the (__+__) operator to add together two values:
+In the example below, we use the (`+`) operator to add together two values:
 
 ```java
 int x = 100 + 50;
 ```
 
 
-Although the (__+__) operator is often used to add together two values, like in the example above, it can also be used to add together a variable and a value, or a variable and another variable:
+Although the (`+`) operator is often used to add together two values, like in the example above, it can also be used to add together a variable and a value, or a variable and another variable:
 
 ```java
 int sum1 = 100 + 50;        // 150 (100 + 50)
@@ -24,81 +25,67 @@ int sum3 = sum2 + sum2;     // 800 (400 + 400)
 
 Java divides the operators into the following groups:
 
-1.  ___Arithmetic operators___
-2.  ___Assignment operators___
-3.  ___Comparison operators___
-4.  ___Logical operators___
-5.  ___Bitwise operators___
+-  ___Arithmetic operators___
+-  ___Assignment operators___
+-  ___Comparison operators___
+-  ___Logical operators___
+-  ___Bitwise operators___
 
 
-##   Arithmetic Operators
+##  1. Arithmetic Operators
 
 Arithmetic operators are used to perform common mathematical operations.
 
-**Operators:**
+### **Operators:**
 
 
-*1. Addition* (+)
+***1. Addition*** (`+`): It adds together two values.
 
-It adds together two values.
-
-Example: ` x + y`
+*Example:* ` x + y`
 
 
-*2. Subtraction* (-)
+***2. Subtraction*** (`-`): It subtracts one value from another.
 
-It subtracts one value from another.
-
-Example: ` x - y`
+*Example:* ` x - y`
 
 
-*3. Multiplication* (*)
+***3. Multiplication*** (`*`): It multiplies two values.
 
-It multiplies two values.
-
-Example: ` x * y`
+*Example:* ` x * y`
 
 
-*4. Division* (/)
+***4. Division*** (`/`): It divides one value by another.
 
-It divides one value by another.
-
-Example: ` x / y`
+*Example:* ` x / y`
 
 
-*5. Modulus* (%)
+***5. Modulus*** (`%`): It returns the division remainder.
 
-It returns the division remainder.
-
-Example: ` x % y`
+*Example:* ` x % y`
 
 
-*6. Increment* (++)
+***6. Increment*** (`++`): It increases the value of a vriable by 1
 
-It increases the value of a vriable by 1
-
-Example: ` ++x`
+*Example:* ` ++x`
 
 
-*7. Decrement* (--)
+***7. Decrement*** (`--`): It decreases the value of a variable by 1
 
-It decreases the value of a variable by 1
-
-Example: ` --x`
+*Example:* ` --x`
 
 
-##   Java Assignment Operators
+##  2. Java Assignment Operators
 
 Assignment operators are used to assign values to variables.
 
-In the example below, we use the assignment operator (__=__) to assign the value 10 to a variable called x:
+In the example below, we use the assignment operator (`=`) to assign the value 10 to a variable called x:
 
 ```java
 int x = 10;
 ```
-The addition assignment operator (__+=__) adds a value to a variable:
+The addition assignment operator (`+=`) adds a value to a variable:
 
-#### Example:    
+### **Example:**    
 ```java
 int x = 10;
 x += 5;
@@ -134,15 +121,15 @@ A list of all assignment operators:
     <<=             x <<= 4         x = x << 4
 ```
 
-##   Java Comparison Operators
+## 3. Java Comparison Operators
 
 Comparison operators are used to compare two values (or variables). This is important in programming, because it helps us to find answers and make decisions.
 
-The return value of a comparison is either true or false. These values are known as `Boolean values`.
+The return value of a comparison is either true or false. These values are known as ***Boolean values***.
 
-In the following example, we use the greater than operator (__>__) to find out if 5 is greater than 3:
+In the following example, we use the greater than operator (`>`) to find out if 5 is greater than 3:
 
-#### Example:
+### **Example:**
 
 ```java
 int x = 5;
@@ -170,7 +157,7 @@ System.out.println(x > y); // returns true, because 5 is higher than 3
                     equal to
 ```
 
-##   Java Logical Operators
+##  4. Java Logical Operators
 
 You can also test for `true` or `false` values with logical operators.
 
