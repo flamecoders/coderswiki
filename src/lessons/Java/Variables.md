@@ -14,7 +14,7 @@ In Java, there are different types of variables, for example:
 
 ## Declaring (Creating) Variables
 To create a variable, you must specify the type and assign it a value:
-```bash
+```java
 type variableName=value;
 ```
 Where type is one of Java types (such as int or String), and variableName is the name of the variable (such as x or name). The equal sign is used to assign values to the variable.
