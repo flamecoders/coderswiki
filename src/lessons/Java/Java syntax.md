@@ -32,7 +32,7 @@ Hello World
 ## 2. The main() Method
 
  The `main()` method is **COMPULSORY** in every Java program.
-```bash
+```java
 public static void main(String[] args)
 ```
  Any code inside the `main()` method will be executed. Don't worry about the keywords before and after main. You will get to know them bit by bit while reading this tutorial.
