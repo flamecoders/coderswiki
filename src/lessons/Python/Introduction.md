@@ -1,7 +1,10 @@
 ---
-title: Introduction to Programming and Python
+title: Introduction
 order: 0
+author: Subhraneel Bhadury
 ---
+
+# Introduction
 
 ## What is Programming?
 
