@@ -2,7 +2,7 @@
 title: Introduction to Variables
 order: 2
 ---
-## Java Variables
+# Java Variables
 Variables are containers for storing data values.
 
 In Java, there are different types of variables, for example:
