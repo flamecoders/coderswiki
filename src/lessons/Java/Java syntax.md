@@ -18,7 +18,7 @@ public class Main {
 }
 ```
 ### **Code Explained**
-========================
+---
 
 #### Every line of code that runs in Java must be inside a `class`. In our example, we named the class **Main**. A class should always start with an uppercase first letter.
 
@@ -29,7 +29,7 @@ public class Main {
 >`Hello World`
 
 ### **The main() Method**
-=========================
+---
 
 #### The `main()` method is **COMPULSORY** in every Java program.
 
@@ -40,7 +40,7 @@ public class Main {
 #### For now, simply keep in mind that every Java program has a `class` name which must match the filename, and that every program must contain the `main()` mathod. Finally, arriving to last section of this chapter--
 
 ### **System.out.println()**
-=========================
+---
 
 #### Inside the `main()` method, we can use the `println()` method to print a line of text to the screen:
 ```
@@ -48,7 +48,8 @@ public static void main(String[] args) {
   System.out.println("Hello World");
 }
 ```
-*** 
+---
+---
 ### ***POINTS TO REMEMBER***
 #### 1. The curly braces `{}` marks the beginning and the end of a block of code.
 
@@ -57,5 +58,3 @@ public static void main(String[] args) {
 #### 3. Each code statement must end with a semicolon (`;`).
 
 #### _**PS**: Don't worry too much about_ `System`, `out` _and_ `println()`.  _Just know that you need them together to print stuff to the screen :)_
----
----
