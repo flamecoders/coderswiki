@@ -9,7 +9,7 @@ app.get('*', (req, res) => {
     res.status(404).send('404 Not Found');
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8082;
 app.listen(PORT, () => {
     console.log(`http://localhost:${PORT}`);
 });
