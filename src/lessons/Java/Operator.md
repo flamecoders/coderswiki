@@ -42,63 +42,49 @@ Arithmetic operators are used to perform common mathematical operations.
 
 It adds together two values.
 
-```
-Example: x + y
-```
+Example: ` x + y`
 
 
 ### 2. Subtraction (-)
 
 It subtracts one value from another.
 
-```
-Example: x - y
-```
+Example: ` x - y`
 
 
 ### 3. Multiplication (*)
 
 It multiplies two values.
 
-```
-Example: x * y
-```
+Example: ` x * y`
 
 
 ### 4. Division (/)
 
 It divides one value by another.
 
-```
-Example: x / y
-```
+Example: ` x / y`
 
 
 ### 5. Modulus (%)
 
 It returns the division remainder.
 
-```
-Example: x % y
-```
+Example: ` x % y`
 
 
 ### 6. Increment (++)
 
 It increases the value of a vriable by 1
 
-```
-Example: ++x
-```
+Example: ` ++x`
 
 
 ### 7. Decrement (--)
 
 It decreases the value of a variable by 1
 
-```
-Example: --x
-```
+Example: ` --x`
 
 
 #   Java Assignment Operators
