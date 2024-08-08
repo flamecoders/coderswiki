@@ -119,8 +119,11 @@ Example:    int x = 10;
 
 A list of all assignment operators:
 
-## Operators        Example         Same As
 ```bash
+ Operators          Example         Same As
+ ```
+
+ ```bash
     =               x = 5           x = 5
 
     +=              x += 3          x = x + 3
@@ -160,7 +163,10 @@ int y = 3;
 System.out.println(x > y); // returns true, because 5 is higher than 3
 ```
 
-## Operator         Name                    Example
+```bash
+ Operator           Name                   Example
+ ```
+
 ```bash
     ==              Equal to                x == y
 
@@ -183,8 +189,11 @@ You can also test for `true` or `false` values with logical operators.
 
 Logical operators are used to determine the logic between variables or values:
 
-## Operator         Name            Description                         Example
 ```bash
+ Operator           Name            Description                         Example
+ ```
+
+ ```bash
     &&              Logical and     Returns true if both                x < 5 && x < 10
                                     statements are true.
 
