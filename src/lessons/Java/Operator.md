@@ -104,37 +104,26 @@ int x = 10;
 x += 5;
 ```
 
+## Assignment Operators
+
 A list of all assignment operators:
 
-```
- Operators          Example         Same As
- ```
 
- ```java
-    =               x = 5           x = 5
+| Operator | Example | Equivalent |
+|---|---|---|
+| = | x = 5 | x = 5 |
+| += | x += 3 | x = x + 3 |
+| -= | x -= 3 | x = x - 3 |
+| *= | x *= 9 | x = x * 9 |
+| /= | x /= 9 | x = x / 9 |
+| %= | x %= 7 | x = x % 7 |
+| &= | x &= 7 | x = x & 7 |
+| \|= | x |= 7 | x = x | 7 |
+| ^= | x ^= 7 | x = x ^ 7 |
+| >>= | x >>= 4 | x = x >> 4 |
+| <<= | x <<= 4 | x = x << 4 |
 
-    +=              x += 3          x = x + 3
-
-    -=              x -= 3          x = x - 3
-
-    *=              x *= 9          x = x * 9
-
-    /=              x /= 9          x = x / 9
-
-    %=              x %= 7          x = x % 7
-
-    &=              x &= 7          x = x & 7
-
-    |=              x |= 7          x = x | 7       
-
-    ^=              x ^= 7          x = x ^ 7   
-
-    >>=             x >>= 4         x = x >> 4
-
-    <<=             x <<= 4         x = x << 4
-```
-
-##   Java Comparison Operators
+## Comparison Operators
 
 Comparison operators are used to compare two values (or variables). This is important in programming, because it helps us to find answers and make decisions.
 
@@ -142,54 +131,24 @@ The return value of a comparison is either true or false. These values are known
 
 In the following example, we use the greater than operator (__>__) to find out if 5 is greater than 3:
 
-#### Example:
+| Operator | Name | Example |
+|---|---|---|
+| == | Equal to | x == y |
+| != | Not equal to | x != y |
+| > | Greater than | x > y |
+| < | Less than | x < y |
+| >= | Greater than or equal to | x >= y |
+| <= | Less than or equal to | x <= y |
 
-```java
-int x = 5;
-int y = 3;
-System.out.println(x > y); // returns true, because 5 is higher than 3
-```
-
-```
- Operator           Name                   Example
- ```
-
-```java
-    ==              Equal to                x == y
-
-    !=              Not equal               x != y
-
-    >               Greater than            x > y
-
-    <               Less than               x < y
-
-    >=              Greater than or         x >= y    
-                    equal to
-
-    <=              Less than or            x <= y
-                    equal to
-```
-
-##   Java Logical Operators
+## Logical Operators
 
 You can also test for `true` or `false` values with logical operators.
 
 Logical operators are used to determine the logic between variables or values:
 
-```
- Operator           Name            Description                         Example
- ```
-
- ```java
-    &&              Logical and     Returns true if both                x < 5 && x < 10
-                                    statements are true.
-
-    ||              Logical or      Returns true if one                 x < 5 || x < 4
-                                    of the statements is 
-                                    true.
-
-    !               Logical not     Reverse the result,                 !(x < 5 && x < 10)
-                                    returns false if the 
-                                    result is true
-```
+| Operator | Name | Description | Example |
+|---|---|---|---|
+| && | Logical AND | Returns true if both expressions are true | x < 5 && x < 10 |
+| \|\| | Logical OR | Returns true if at least one expression is true | x < 5 || x < 4 |
+| ! | Logical NOT | Reverses the result of an expression | !(x < 5 && x < 10) |
 
