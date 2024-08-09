@@ -1,16 +1,16 @@
 ---
-title: C++ Output
-order: 3
+title: Output
+order: 4
 author: Malay Patra
 ---
 
 # C++ Output
 
-## The `cout` Object
+## 1. The `cout` Object
 
 The `cout` object, together with the `<<` operator, is used to output values/print text:
 
-### Example
+**Example:**
 
 ```cpp
 #include <iostream>
@@ -35,4 +35,9 @@ int main() {
   cout << "I am learning C++";
   return 0;
 }
-```F
+```
+
+The output should look like:
+```bash
+Hello World!I am learning C++
+```
