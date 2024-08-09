@@ -1,6 +1,7 @@
 ---
 title: Python Get Started
 order: 1
+author: Malay Patra
 ---
 
 # Python Getting Started

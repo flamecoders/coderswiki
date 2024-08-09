@@ -1,14 +1,15 @@
 ---
 title: Python Variables
 order: 2
+author: Arifin
 ---
 
-# Variables
+# Variables 
 
 Variables are containers for storing data values.
 
 
-# Python Variables
+## 1. Python Variables
 
 Python has no command for declaring a variable.
 
@@ -37,7 +38,7 @@ Now, there's another cool thing about Python which you should know.
 
 Variables do not need to be declared with any particular type, and can even change type after they have been set (unlike most of the other programming languages!)
 
-# Variable Casting
+## 2. Variable Casting
 
 If you want to specify the data type of a variable, this can be done with casting.
 
@@ -47,7 +48,7 @@ y = int(3)    # y will be 3
 z = float(3)  # z will be 3.0
 ```
 
-# Getting the type of a variable
+## 3. Getting the type of a variable
 
 You can get the data type of a variable with the type() function. (This comes handy quite often! :D)
 

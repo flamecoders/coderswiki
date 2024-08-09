@@ -91,6 +91,8 @@ int x = 10;
 x += 5;
 ```
 
+## Assignment Operators
+
 A list of all assignment operators:
 
 | Operator | Example | Equivalent |
