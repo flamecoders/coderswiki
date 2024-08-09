@@ -4,8 +4,11 @@ order: 2
 Author: Akshay Kumar Jha
 ---
 # Java Variables
-So in the previous chapter we were introduced to the world of Java.Now lets dive into the concepts of Java.We shall begin with a simple concept called variables.
+So in the previous chapter we were introduced to setup of Java.
 
+Now lets dive into the concepts of Java.We shall begin with a simple concept called variables.
+
+## 1. Variable types
 Variables are containers for storing data values.
 
 In Java, there are different types of variables, for example:
@@ -15,43 +18,47 @@ In Java, there are different types of variables, for example:
 - `char` - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
 - `boolean` - stores values with two states: true or false
 
-## Declaring (Creating) Variables
-To create a variable, you must specify the type and assign it a value:
+## 2. Declaring (Creating) Variables
+To create a variable, you must specify the type and assign it a value :
 ```java
-type variableName=value;
+type variableName = value;
 ```
-Where type is one of Java types (such as int or String), and variableName is the name of the variable (such as x or name). The equal sign is used to assign values to the variable.
+Where type is one of Java types (such as int or `String`), and variableName is the name of the variable (such as `x` or `name`). The equal sign is used to assign values to the variable.
 
-To create a variable that should store text, look at the following example:
-Example
-Create a variable called name of type String and assign it the value "John":
+To create a variable that should store text, look at the following example :
+
 ```java
 String name = "John";
 System.out.println(name);
-
 ```
-To create a variable that should store a number, look at the following example:
+
+it creates a variable called `name` of type `String` and assign it the value `"John"`
+
+similarly, to create a variable that should store a `number`, look at the following example:
 ```java
 int myNum = 15;
 System.out.println(myNum);
 ```
-You can also declare a variable without assigning the value, and assign the value later:
-Example
+You can also declare a variable without assigning the value, and assign the value later.
+
+**Example :**
 ```java
 int myNum;
 myNum = 15;
 System.out.println(myNum);
 ```
-Note that if you assign a new value to an existing variable, it will overwrite the previous value:
-Example Change the value of myNum from 15 to 20:
+> **Note :** if you assign a new value to an existing variable, it will overwrite the previous value.
+
+Let's see how :
 ```java
 int myNum = 15;
 myNum = 20;  // myNum is now 20
 System.out.println(myNum);
 ```
 ## Final Variables
-If you dont want others (or yourself) to overwrite existing values, use the final keyword (this will declare the variable as "final" or "constant", which means unchangeable and read-only):
-Example
+If you dont want others (or yourself) to overwrite existing values, use the `final` keyword (this will declare the variable as `final` or `constant`, which means unchangeable and read-only).
+
+**Example :**
 ```java
 final int myNum = 15;
 myNum = 20;  // will generate an error: cannot assign a value to a final variable
@@ -59,7 +66,8 @@ myNum = 20;  // will generate an error: cannot assign a value to a final variabl
 
 ## Other Types
 A demonstration of how to declare variables of other types:
-Example
+
+**Example :**
 ```java
 int myNum = 5;
 float myFloatNum = 5.99f;
