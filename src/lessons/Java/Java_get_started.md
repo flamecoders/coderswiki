@@ -10,19 +10,15 @@ It is owned by Oracle.
 
 It is used for:
 
-Mobile applications (specially Android apps)
-
-Desktop applications
-
-Web applications
-
-Web servers and application servers
-
-Games
-
-Database connection
+- Mobile applications (specially Android apps)
+- Desktop applications
+- Web applications
+- Web servers and application servers
+- Games
+- Database connection
 
 And much, much more!
+
 ## 2 .Java install:
 Some PCs might have Java already installed.
 
