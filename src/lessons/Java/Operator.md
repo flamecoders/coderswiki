@@ -35,43 +35,15 @@ Java divides the operators into the following groups:
 ##  1. Arithmetic Operators
 
 Arithmetic operators are used to perform common mathematical operations.
-
-### **Operators:**
-
-
-***1. Addition*** (`+`): It adds together two values.
-
-*Example:* ` x + y`
-
-
-***2. Subtraction*** (`-`): It subtracts one value from another.
-
-*Example:* ` x - y`
-
-
-***3. Multiplication*** (`*`): It multiplies two values.
-
-*Example:* ` x * y`
-
-
-***4. Division*** (`/`): It divides one value by another.
-
-*Example:* ` x / y`
-
-
-***5. Modulus*** (`%`): It returns the division remainder.
-
-*Example:* ` x % y`
-
-
-***6. Increment*** (`++`): It increases the value of a vriable by 1
-
-*Example:* ` ++x`
-
-
-***7. Decrement*** (`--`): It decreases the value of a variable by 1
-
-*Example:* ` --x`
+| **Operation**       | **Description**                             | **Example** |
+|---------------------|---------------------------------------------|-------------|
+| ***Addition***      | It adds together two values.                | `x + y`     |
+| ***Subtraction***   | It subtracts one value from another.        | `x - y`     |
+| ***Multiplication***| It multiplies two values.                   | `x * y`     |
+| ***Division***      | It divides one value by another.            | `x / y`     |
+| ***Modulus***       | It returns the division remainder.          | `x % y`     |
+| ***Increment***     | It increases the value of a variable by 1   | `++x`       |
+| ***Decrement***     | It decreases the value of a variable by 1   | `--x`       |
 
 
 ##  2. Java Assignment Operators
@@ -90,8 +62,6 @@ The addition assignment operator (`+=`) adds a value to a variable:
 int x = 10;
 x += 5;
 ```
-
-## Assignment Operators
 
 A list of all assignment operators:
 
