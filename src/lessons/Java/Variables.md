@@ -1,7 +1,7 @@
 ---
 title: Introduction to Variables
 order: 2
-Author: Akshay Kumar Jha
+author: Akshay Kumar Jha
 ---
 # Java Variables
 So in the previous chapter we were introduced to setup of Java.
