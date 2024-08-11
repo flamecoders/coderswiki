@@ -5,18 +5,32 @@ const ejs = require("ejs");
 const matter = require("gray-matter");
 const hljs = require("highlight.js");
 
+// Load plugins
 const md = MarkdownIt({
     highlight: function (str, lang) {
         if (lang && hljs.getLanguage(lang)) {
             try {
                 return hljs.highlight(str, { language: lang }).value;
-            } catch (__) {}
+            } catch (__) { }
         }
-
         return "";
     },
     linkify: true,
 });
+
+// Custom plugin definations
+function wrapImages(md) {
+    md.renderer.rules.image = (tokens, idx, options, env, self) => {
+        const token = tokens[idx];
+        token.attrs[token.attrIndex('src')][1] = md.utils.escapeHtml(token.attrs[token.attrIndex('src')][1]);
+        const imgTag = self.renderToken(tokens, idx, options);
+        return `<div class="img-centerer"><div class="img-container">${imgTag}</div></div>`;
+    };
+}
+
+// Load the custom plugins
+md.use(wrapImages);
+
 
 const srcPath = path.join(__dirname, "src");
 const buildPath = path.join(__dirname, "build");
