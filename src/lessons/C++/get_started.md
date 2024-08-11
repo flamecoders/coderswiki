@@ -33,6 +33,7 @@ You should see the version information of GCC if it was installed successfully.
 2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.
 3. Search for "C/C++" and install the extension by Microsoft.
 
+
 ### Configure Your Compiler Path
 1. Open VS Code and navigate to the settings by clicking on the gear icon in the bottom left corner and selecting "Settings".
 2. In the search bar, type "compiler path" to locate the setting where you can specify the path to your GCC installation. Ensure it points to the correct location where GCC is installed.
@@ -52,7 +53,6 @@ int main() {
 
 ## 5. Compiling and Running Your Program
 1. Open the terminal in VS Code by selecting `View > Terminal` from the menu or press `` Ctrl + ` `` .
-
 2. Navigate to the directory where your `hello_world.cpp` file is saved.
 3. Compile the program by typing:
 ```bash

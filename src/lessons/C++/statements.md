@@ -53,3 +53,5 @@ Then the second statement is executed (print "Have a good day!" to the screen).
 And at last, the third statement is executed (end the C program successfully).
 
 > You will learn more about statements while reading this tutorial. For now, just remember to always end them with a semicolon to avoid any errors.
+
+![img](https://picsum.photos/300/300)
