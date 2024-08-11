@@ -18,19 +18,6 @@ const md = MarkdownIt({
     linkify: true,
 });
 
-// Custom plugin definations
-function wrapImages(md) {
-    md.renderer.rules.image = (tokens, idx, options, env, self) => {
-        const token = tokens[idx];
-        token.attrs[token.attrIndex('src')][1] = md.utils.escapeHtml(token.attrs[token.attrIndex('src')][1]);
-        const imgTag = self.renderToken(tokens, idx, options);
-        return `<div class="img-centerer"><div class="img-container">${imgTag}</div></div>`;
-    };
-}
-
-// Load the custom plugins
-md.use(wrapImages);
-
 
 const srcPath = path.join(__dirname, "src");
 const buildPath = path.join(__dirname, "build");
@@ -138,8 +125,14 @@ getDirectories(lessonsPath).forEach((l) => {
 
         // Set the lesson URL to the first chapter's URL
         lesson.url = sortedChapters[0].url;
-
         lessons.push(lesson);
+        // Copy assets
+        const assetsPath = path.join(lessonDir, 'assets');
+        if (fs.existsSync(assetsPath)) {
+            const buildAssetsPath = path.join(buildPath, l, 'assets')
+            copyFolderRecursive(assetsPath, buildAssetsPath);
+        }
+
     } else {
         console.log(
             `⚠ Skipping lesson: ${l}\n⚠ No chapters within this lesson`,
@@ -148,7 +141,10 @@ getDirectories(lessonsPath).forEach((l) => {
 });
 
 lessons.forEach((lesson) => {
-    fs.mkdirSync(path.join(buildPath, lesson.location));
+    const lessonBuildPath = path.join(buildPath, lesson.location);
+    if (!fs.existsSync(lessonBuildPath)) {
+        fs.mkdirSync(lessonBuildPath);
+    }
     const sortedChapters = lesson.chapters.sort((a, b) => a.order - b.order);
     lesson.chapters = sortedChapters;
 
@@ -179,6 +175,7 @@ lessons.forEach((lesson) => {
         );
     });
 });
+
 
 ejs.renderFile(indexPath, { lessons }, (err, str) => {
     if (err) {
