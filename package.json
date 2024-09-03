@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node build.js",
-    "serve": "node server.js"
+    "serve": "node server.js",
+    "pushf": "git add . && git commit -m \"Small fix\" && git push"
   },
   "keywords": [],
   "author": "",
