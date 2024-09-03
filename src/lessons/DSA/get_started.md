@@ -1,10 +1,10 @@
 ---
 title: DSA Get Started
-order: 1
+order: 0
 author: Malay Patra
 ---
 
-# Getting Started with Data Structures and Algorithms (DSA)
+# DSA Get Started
 
 Welcome to **CodersWiki**! 
 
