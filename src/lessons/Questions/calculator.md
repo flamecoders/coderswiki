@@ -6,7 +6,7 @@ author: Malay Patra
 
 # Make a Simple Calculator
 
-> **Note:** Before attempting this question, ensure you have completed the lesson on [Basic Input/Output](#).
+> **Note:** Before attempting this question, ensure you have completed the lesson on [Basic Input/Output](https://coderswiki.vercel.app/DSA/input_output.html).
 
 In this exercise, you will create a simple calculator that performs basic arithmetic operations: addition, subtraction, multiplication, and division. The calculator will take two numbers as input from the user and then ask which operation to perform. Finally, it will display the result.
 
