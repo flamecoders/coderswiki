@@ -17,6 +17,8 @@ app.get('*', (req, res, next) => {
         return res.status(404).send('404 Not Found');
     }
 
+    res.status(200).send(requestedPath);
+
     if (fs.existsSync(requestedPath)) {
         return res.sendFile(requestedPath);
     } else {
