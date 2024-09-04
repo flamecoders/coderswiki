@@ -50,8 +50,9 @@ const parseMarkdownFile = (filePath) => {
     const order = parsed.data.order || 0;
     const author = parsed.data.author || 'unknown';
     const renderedContent = md.render(parsed.content);
+    const urlSlug = path.basename(filePath, ".md");
     const outputFileName = path.basename(filePath, ".md") + ".html";
-    return { title, order, renderedContent, outputFileName, author };
+    return { title, order, renderedContent, urlSlug, outputFileName, author };
 };
 
 const copyFolderRecursive = (src, dest) => {
@@ -103,9 +104,9 @@ getDirectories(lessonsPath).forEach((l) => {
     const chapters = getMarkdownFiles(lessonDir);
     chapters.forEach((c) => {
         const chapterPath = path.join(lessonDir, c);
-        const { title, order, renderedContent, outputFileName, author } =
+        const { title, order, renderedContent, urlSlug, outputFileName, author } =
             parseMarkdownFile(chapterPath);
-        const chapterUrl = `/${l}/${outputFileName}`;
+        const chapterUrl = `/${l}/${urlSlug}`;
         lesson.chapters.push({
             title,
             order,

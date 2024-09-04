@@ -104,7 +104,7 @@ where `n` stand for `input size`, and the equation says how the time taken is ch
 ## Some of the most used notation
 
 ### 1. O(1)
-Where time taken is not depended on size on input at all (`const time`).
+Here time taken is not depended on size on input at all (`const time`).
 
 **For example:**
 
@@ -117,4 +117,73 @@ It takes almost same time to print `"Hello world"` and `"Hello Hello Hello world
 ![O(1) plot](./assets/o1.png)
 
 > We get a little increase in the taken time as inpusize increases, however it's negligible.
+
+### 2. O(n)
+This is called **linear time complexity**. The time taken grows directly in proportion to the size of the input `n`. If you double the input size, the time taken also doubles.
+
+**For example:**
+
+```python
+for i in range(n):
+    print(i)
+```
+
+In this code, the `for` loop runs `n` times, so the time taken increases directly with `n`.
+
+**Plot:**
+![O(n) plot](./assets/on.png)
+
+> As we see in the plot, the time taken increases at a steady rate as the input size increases.
+
+### 3. O(n^2)
+This is known as **quadratic time complexity**. The time taken grows with the square of the input size. If you double the input size, the time taken becomes four times longer.
+
+**For example:**
+
+```python
+for i in range(n):
+    for j in range(n):
+        print(i, j)
+```
+
+Here, two loops are nested, each running `n` times, leading to `n * n = n^2` operations, which is why it's called quadratic time complexity.
+
+**Plot:**
+![O(n^2) plot](./assets/on2.png)
+
+> The plot shows a curved increase in time as the input size grows, which is why quadratic time can become slow for large inputs.
+
+### 4. O(log n)
+This is called **logarithmic time complexity**. The time taken increases slowly, even as the input size grows. It’s common in algorithms that repeatedly reduce the size of the problem with each step.
+
+**For example:**
+
+```python
+n = 16
+while n > 1:
+    n = n // 2
+    print(n)
+```
+
+In this code, `n` is divided by 2 repeatedly, so the number of steps is proportional to the logarithm of `n`.
+
+**Plot:**
+![O(log n) plot](./assets/ologn.png)
+
+> The plot shows that the time taken increases very slowly, which is why logarithmic time complexity is efficient for large inputs.
+
+### All Together
+![All together](./assets/oall.png)
+
+### Demo Comparison
+![All together](./assets/ocompare.png)
+
+From the above image we can clearly say that for `p1` size of data we would prefer `O(n)` algorithm over `O(lon n)` but for `p2` size of data, we would prefer the opposite.
+
+In the next chapter we will learn how to calculate `Big-o` for a given code using basics mathematics.
+
+**Happy Coding!**
+
+
+
 
