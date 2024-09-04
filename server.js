@@ -6,9 +6,7 @@ const app = express();
 
 // app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('*', (req, res, next) => {
-    res.status(200).send("ok, good");
-});
+
 // app.get('*', (req, res, next) => {
 //     let requestedPath = path.join(__dirname, 'build', req.path);
 
