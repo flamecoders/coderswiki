@@ -172,10 +172,11 @@ In this code, `n` is divided by 2 repeatedly, so the number of steps is proporti
 
 > The plot shows that the time taken increases very slowly, which is why logarithmic time complexity is efficient for large inputs.
 
-### All Together
+All together should look like -
+
 ![All together](./assets/oall.png)
 
-### Demo Comparison
+### 5. Demo Uses
 ![All together](./assets/ocompare.png)
 
 From the above image we can clearly say that for `p1` size of data we would prefer `O(n)` algorithm over `O(lon n)` but for `p2` size of data, we would prefer the opposite.
