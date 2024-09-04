@@ -10,7 +10,7 @@ Welcome to **CodersWiki**!
 
 In this lesson, we’ll embark on a journey to understand the fundamentals of Data Structures and Algorithms (DSA). This is the foundation of efficient programming and problem-solving, and we will cover it using three popular programming languages: **Python**, **C++**, and **Java**.
 
-> NOTE: It is strongly recomanded to finish learning the basics of any one programming language properly, before getting started with DSA !
+> It is strongly recomanded to finish learning the basics of any one programming language properly, before getting started with DSA !
 
 ## What is DSA?
 

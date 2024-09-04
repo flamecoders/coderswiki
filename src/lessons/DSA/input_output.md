@@ -1,5 +1,5 @@
 ---
-title: Basic Input/Output
+title: Input/Output
 order: 1
 author: Malay Patra
 ---

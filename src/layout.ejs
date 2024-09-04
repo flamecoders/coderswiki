@@ -26,6 +26,7 @@
          --border: #2a2e35;
          --accent: #f97316;
          --accent-s: #eab308;
+         --notes: #1a1e25;
       }
 
       ::-webkit-scrollbar {
@@ -80,12 +81,23 @@
       }
 
       blockquote {
-         margin: 16px 20px;
+         background-color: var(--notes);
+         padding: 5px;
          margin-left: 0;
          padding-left: 20px;
+         padding-top: 15px;
          border-left: 2px solid var(--accent);
+         position: relative;
       }
 
+      blockquote::before {
+         content: 'NOTE';
+         font-weight: bold;
+         color: var(--accent);
+         position: absolute;
+         top: 5px;
+         left: 10px;
+      }
       caption {
          padding: 10px;
          font-size: 1.2rem;

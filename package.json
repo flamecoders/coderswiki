@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node build.js",
     "serve": "node server.js",
+    "qserve": "node build.js && node server.js",
     "pushf": "git add . && git commit -m \"Small fix\" && git push"
   },
   "keywords": [],
