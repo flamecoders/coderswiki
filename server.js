@@ -12,12 +12,12 @@ app.get('*', (req, res, next) => {
     if (path.extname(requestedPath) === '') {
         requestedPath += '.html';
     }
+    res.status(200).send(requestedPath);
 
     if (path.extname(requestedPath) !== '.html') {
         return res.status(404).send('404 Not Found');
     }
 
-    res.status(200).send(requestedPath);
 
     if (fs.existsSync(requestedPath)) {
         return res.sendFile(requestedPath);
